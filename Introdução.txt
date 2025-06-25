@@ -1,0 +1,89 @@
+Estudos de JavaScript:
+No javascript, usamos 
+Console.log("qualquer coisa") para aparecer na tela.
+Window.alert('qualquer coisa') é o comando de alerta na tela.
+Window.confirm('qualquer coisa') é o comando de confirmação.
+window.prompt('qualquer coisa') é o comando para comentário.
+	retorna como string
+
+
+let = variável
+nome de uma variável: identificador
+regras: Não pode começar com números/É possível utilizar letras e números/É possível utilizar acentos e símbolos/Não podem conter espaços/Não podem ser palavras reservadas(alert, var, confirm...)
+
+um sinal de = é lido como "recebe".
+null = nula/nada
+é possível usar: " ' ` para delimitar um string
+-----------------------------------------------------------------------------------------------------------------
+Tipos de dados:
+   Primitivos
+
+Comando: typeof ( saber o tipo daquela variável )
+
+number = números usados para cálculos matemáticos. Possui 2 valores internos:
+	Infinity e NaN
+
+Stringer = cadeia de caracteres, que se não for para fazer cálculo, e a formatação for relevante, o ideal é armazenar como string.
+
+True e False = boolean/valor booleano
+
+null = nulo/nada (é visto pelo JS como object)
+
+undefined = indefinido
+
+object = objetos
+	array = vetor
+
+function = função
+
+Variável é um espaço delimitado para comportar dados.
+	Valores postos dentro das var = atribuição
+
+Use const sempre que o valor não precisa mudar.
+Use let quando o valor vai mudar.
+-----------------------------------------------------------------------------------------------------------------
+Manipulação de dados:
+utilização do let ou const.
+	let nome = window.prompt("Qual seu nome?")
+	window.alert("É um grande prazer te conhecer, " + nome)
+
++ tem função de junção
++ também tem função de adição
+
+(number + number = adição)
+(string + string = concatenação/ junção)
+
+conversão: ( n = qualquer valor )
+	string > number
+Number.parseInt(n) = número inteiro (1, 2, 3...)
+Number.parseFloat(n) = número real (1.2, 3.14, 2.5...)
+Number(n) = O próprio JS decide
+
+	number > string
+String(n)
+n.toString
+
+n.length - quantos caracteres a string tem
+n.toUpperCase(n) - Letras maiúsculas
+n.toLowerCase(n) - Letras minúsculas
+
+document.write(n) - escreve um parágrafo no site
+
+Formatador de Strings:
+ entre ` 
+coloco ${n} 
+
+Formatador de números:
+n.toFixed(numero de casas) - mostra o número completo
+n.toFixed(nc).replace(".", ",") - troca . por ,
+n.toLocaleString("pt-BR", {style: "currency", currency: "BRL"})
+-----------------------------------------------------------------------------------------------------------------
+Operadores:
+
+Aritméticos
++ - Soma
+- - 
+* -
+/ -
+% -
+** -
