@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        input{
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="ct1" id="ct1" placeholder="Escolha um número..."> +
+    <input type="number" name="ct2" id="ct2" placeholder="Escolha outro número...">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">
+        Resultado 
+    </div>
+    <script>
+        function somar(){
+            const t1 = document.getElementById('ct1')
+            const t2 = document.getElementById('ct2')
+            let n1 = Number(t1.value)
+            let n2 = Number(t2.value)
+            let s = n1 + n2
+            let res = document.getElementById('res')
+            res.innerHTML = `O resultado da soma de ${n1} + ${n2} é igual a ${s}`
+        }
+    </script>
+</body>
+</html>
