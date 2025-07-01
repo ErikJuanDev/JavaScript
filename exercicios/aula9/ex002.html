@@ -16,18 +16,27 @@
     <input type="number" name="ct1" id="ct1" placeholder="Escolha um número..."> +
     <input type="number" name="ct2" id="ct2" placeholder="Escolha outro número...">
     <input type="button" value="Somar" onclick="somar()">
-    <div id="res">
-        Resultado 
+    <div id="resul">
+        Resultado:
+        <span id="res"></span> <!--Caixa in line invisivel-->
     </div>
     <script>
         function somar(){
             const t1 = document.getElementById('ct1')
             const t2 = document.getElementById('ct2')
+            // constantes ligadas ao input
+
             let n1 = Number(t1.value)
             let n2 = Number(t2.value)
+            // variáveis ligadas as constantes 
+            //value = valor escolhido/escolha
+
             let s = n1 + n2
+            //soma
+
             let res = document.getElementById('res')
-            res.innerHTML = `O resultado da soma de ${n1} + ${n2} é igual a ${s}`
+            res.innerHTML = ` ${n1} + ${n2} = ${s}`
+            //substituição do span pelo texto escolhido
         }
     </script>
 </body>
