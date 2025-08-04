@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saiba se você pode votar!</title>
+    <style>
+        #form{
+            background-color: gray;
+            width: 500px;
+            height: 250px;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #form > h1{
+            text-align: center;
+        }
+        #form > p {
+            text-align: center;
+        }
+        #inp{
+            display: flex;
+            justify-content: center;
+            
+        }
+        #idade {
+            width: 200px;
+            height: 25px;
+        }
+        #res{
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+    <h1>Você sabe se pode votar?</h1>
+    <p>Descubra inserindo sua idade!</p>
+    <div id="inp">
+        <input type="number" name="idade" id="idade" placeholder="Insira sua idade...">
+        <input type="button" id="env" value="enviar" onclick="descobrir()">
+    </div>
+    <p><span id="res"></span></p>
+
+    <script>
+        function descobrir(){
+            let i = document.getElementById("idade")
+            let anos = (i.value)
+            let r = document.getElementById("res")
+
+            if(anos < 16){
+                r.innerHTML = (`Você tem ${anos} anos, e não pode votar por ser menor de idade!`)
+            }
+            else if(anos < 18){
+                r.innerHTML = (`Você tem ${anos} anos, seu voto é opcional!`)
+            } else{
+                    r.innerHTML = (`Você tem ${anos} anos, portanto, é maior de idade e seu voto é obrigatório!`)
+                }
+                
+            }
+    </script>
+    </div>
+</body>
+</html>

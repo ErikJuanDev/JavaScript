@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de clicks</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        button{
+            width: 200px;
+            height: 100px;
+        }
+        body{
+            font: normal 20px arial;
+        }
+        #center{
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="center">
+        <h1>Contador de Clicks</h1>
+        <button id="mais" onclick="mais()">+1</button>
+        <button id="menos" onclick="menos()">-1</button>
+        <div>Resultado:
+            <span id="resultado"></span>
+        </div>
+    </div>
+    <script>
+        let contagem = 0
+        let res = document.getElementById("resultado")
+        function mais(){
+            contagem ++
+            res.innerHTML = contagem
+        }
+        function menos(){
+            contagem --
+            res.innerHTML = contagem
+        }
+    </script>
+</body>
+</html>

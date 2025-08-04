@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade e Nome</title>
+</head>
+<body>
+    <h1>Teste JavaScript</h1>
+    <p>Olá, quero apenas fazer um teste. 
+    <br>primeiro, diga seu nome:</p>
+    <input type="text" name="nome" id="nome" placeholder="Digíte seu nome..."> <input type="button" value="enviar" onclick="enviado()"> <br>
+    <span id="res">...</span>
+    <p>Agora diga sua idade:</p>
+    <input type="number" name="idade" id="idade" placeholder="Digíte sua idade..."> <input type="button" value="enviar" onclick="minhaidade()">
+    <br> <span id="MostrarIdade">...</span>
+    <script>
+        function enviado(){
+            let rec = document.getElementById("nome")
+            let nome = (rec.value)
+            let resultado = document.getElementById("res")
+            resultado.innerHTML = (`Olá ${nome} se você está vendo isso, é sinal que deu tudo certo!`)
+            let minhaidade = document.getElementById("idade")
+            let resultidade = (idade.value)
+            let result = document.getElementById("MostrarIdade")
+            if(resultidade >= 18){
+            result.innerHTML = (`Se isso apareceu para você, significa que é maior de idade por ter ${resultidade} anos!`)}
+            else {
+                result.innerHTML = (`Parece que você é menor de idade, tem apenas ${resultidade} anos!`) 
+            }
+        }
+         
+    </script>
+</body>
+</html>

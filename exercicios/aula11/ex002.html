@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste país</title>
+</head>
+<body>
+    <h1>Teste Gringo ou Brasileiro</h1>
+    <p>Quero saber se você é gringo ou brasileiro</p>
+    <input type="text" name="pais" id="pais" placeholder="Digíte o nome do seu país..."> <input type="button" value="enviar" onclick="Descobrir()">
+    <p><span id="res"></span></p>
+
+    <script>
+        function Descobrir(){
+            let p = document.getElementById(`pais`)
+            let local = (pais.value)
+            let res = document.getElementById(`res`)
+            if(local != `Brasil`){
+            res.innerHTML = (`Você é gringo!`)
+            }
+            else{
+                res.innerHTML = (`Você é brazuka!`)
+            }
+        }
+    </script>
+</body>
+</html>

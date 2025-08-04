@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+</head>
+<body>
+    <h1>Qual seu salário?</h1>
+    <input type="number" name="salario" id="salario" placeholder="Insira seu salário...">
+    <input type="button" value="enviar" onclick="calcular()">
+    <p><span id="res"></span></p>
+
+    <script>
+        function calcular(){
+            let sl = document.getElementById("salario")
+            let quant = (sl.value)
+            let r = document.getElementById("res")
+                if(quant == 1500){
+                    r.innerHTML = ("Você recebe um salário mínimo!") 
+                }
+                else{
+                    if(quant > 1500){
+                        r.innerHTML = ("Você recebe mais que um salário mínimo!")
+                    }
+                    else{
+                        r.innerHTML = ("Você recebe menos que um salário mínimo!")
+                    }
+                }
+        }
+    </script>
+</body>
+</html>
