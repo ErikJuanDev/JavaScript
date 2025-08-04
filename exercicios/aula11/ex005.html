@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que dia da semana é hoje?</title>
+    <style>
+        input{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+<body>
+    <h1>Vamos ver que dia é hoje?</h1>
+    <input type="button" value="toque" onclick="diasem()">
+    <p><span id="res"></span></p>
+    
+    <script>
+        function diasem(){
+            let r = document.getElementById("res")
+            let dia = new Date()
+            let agora = dia.getDay()
+            r.innerHTML = agora
+            switch(agora) {
+                case 0: r.innerHTML = "Domingo"
+                break
+                case 1: r.innerHTML = "Segunda-Feira"
+                break
+                case 2: r.innerHTML = "Terça-Feira"
+                break
+                case 3: r.innerHTML = "Quarta-Feira"
+                break
+                case 4: r.innerHTML = "Quinta-Feira"
+                break
+                case 5: r.innerHTML = "Sexta-Feira"
+                break
+                case 6: r.innerHTML = "Sábado"
+                break
+                default: r.innerHTML = "[Erro] Dia Inválido!"
+            }
+        }
+    </script>
+</body>
+</html>
