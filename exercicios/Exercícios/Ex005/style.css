@@ -16,7 +16,7 @@ main{
     padding: 10px;
     border-radius: 10px;
     width: 500px;
-    height: 32vh;
+    height: 56vh;
     margin: auto;
 }
 input{
@@ -29,5 +29,5 @@ footer{
     margin: 15px;
 }
 #fim{
-    margin: 10px;
+    margin: 6px;
 }
