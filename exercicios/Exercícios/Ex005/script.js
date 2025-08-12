@@ -4,7 +4,7 @@ function Adicionar() {
     let valor = (num.value)
     valor = []
 
-    if (num.value.length == 0 || num.value.length > 100 && num.value.length < 1) {
+    if (num.value.length == 0 || num.value > 100 || num.value < 1) {
         window.alert("O valor inserido é ínvalido!")
     } else {
             valor.push
