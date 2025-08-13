@@ -5,14 +5,15 @@ valor = []
 
 function inLista(n, l) {
     if(l.indexOf(Number(n)) > -1){
-        return true
+        return true // o numero foi encontrado
     } else {
-        return false
+        return false //numero nao encontrado (nao existe)
     }
 }
 
 function isNumero(n) {
-    if (Number(n) >= 1 && Number(n) <= 100){
+    if (Number(n) >= 1 && Number(n) <= 100) //É um numero de 1 a 100
+        {
         return true
     } else {
         return false
