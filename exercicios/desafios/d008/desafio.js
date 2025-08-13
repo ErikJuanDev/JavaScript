@@ -1,12 +1,10 @@
 // maior numero
 
-let valor = [5, 3, 7, 10, 2]
+let valor = [1  , 35, 43, 64, 12]
 let maior = valor[0] 
 
-for(let posicao in valor){
-    valor.sort() // valor = [2, 3, 5, 7, 10]
-    if(maior < valor[posicao]){ // maior == 2
+    for(let posicao in valor){
+    if(maior < valor[posicao]){ // maior == 5
         maior = valor[posicao]
-        console.log (maior)
     } 
-}
+}   console.log (maior)
