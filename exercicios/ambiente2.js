@@ -6,5 +6,7 @@ function ValorFinal(produto, quantidade) {
     }
     const valor = listaDeProdutos[produto]
     const Total = valor * quantidade
+
+    return Total
 }
 console.log(ValorFinal('Halls', 2))
