@@ -18,13 +18,16 @@
          },
      ]
 
-//findindex - Devolve a posicao do objeto dentro do array
+//map - percorre e mapeia a array, criando uma nova com base no que utilizarmos
 
-     //leia-se: achar a posicao do user dentro de usuarios
-const acharUsuario = usuarios.findIndex((user) => {
-    //leia-se: retorne o user de nome identico ao(...)
-    return user.nome === "Fernando da Silva"
+const users = usuarios.map((users) => {
+    if (users.idade >= 18) {
+        return users.id
+    }
+    return users.nome + " é menor de idade"
 })
-console.log(acharUsuario)
-console.log(usuarios[acharUsuario].idade = 24)
- console.log(usuarios)
+console.log(users)
+
+ console.log(   
+     usuarios.reverse()
+ )
