@@ -1,0 +1,35 @@
+*{
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+body{
+text-align: center;
+}
+h1{
+    padding: 10px;
+}
+#parag{
+font-size: large;
+}
+#tarefas{
+padding: 5px;
+border-radius: 5px;
+}
+#add{
+padding: 5px;
+border-radius: 5px;
+}
+#taref{
+border: 1px, solid, black;
+height: 150px;
+margin: 10px;
+border-radius: 5px;
+text-align: justify;
+}
+ul{
+padding: 20px;
+}
+.checked{
+    text-decoration: line-through;
+}
