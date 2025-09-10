@@ -19,7 +19,10 @@ function isNumero(n) {
         return false
     }
 }
-    function Adicionar(){
+function Adicionar() {
+    // se o numero for entre 1 e 100, retorna true
+    
+    //se o numero estiver na lista, retorna true que vira false, ou seja pode entrar esse numero caso ele nao esteja em lista
         if (isNumero(num.value) && !inLista(num.value, valor)){
             valor.push(Number(num.value))
             let item = document.createElement("option")

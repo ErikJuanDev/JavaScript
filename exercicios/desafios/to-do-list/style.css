@@ -12,7 +12,7 @@ h1{
 #parag{
 font-size: large;
 }
-#tarefas{
+#task{
 padding: 5px;
 border-radius: 5px;
 }
@@ -20,12 +20,13 @@ border-radius: 5px;
 padding: 5px;
 border-radius: 5px;
 }
-#taref{
+#list{
 border: 1px, solid, black;
-height: 150px;
+height: 500px;
 margin: 10px;
 border-radius: 5px;
-text-align: justify;
+text-align: start;
+
 }
 ul{
 padding: 20px;

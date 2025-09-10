@@ -1,29 +1,35 @@
-function createCloseButton(li) {
-    let span = document.createElement("span")
-    let txt = document.createTextNode(" X")
-
-    span.className = "close"
-    span.appendChild(txt)
-    li.appendChild(span)
-
-    span.onclick = () => span.parentElement.style.display = "none"
-}
-
 function adicionarLista() {
-    let addlista = document.getElementBy("tarefas").value;
-    let li = document.createElement("li")
-    let inputText = document.createTextNode(addlista)
+    let tarefa = document.getElementById("task")
+    let task = tarefa.value
+    let list = document.getElementById("list")
 
-    li.appendChild(inputText)
-    document.getElementById("list").appendChild(li)
-    addlista.value = ""
+    if (task.length == 0) {
+        alert(`Conteúdo inválido!`)
+    } else {
+        
+        let item = document.createElement("li")
+        item.innerText = `${task}`
+        //item é o elemento pai
+        item.appendChild(criarRemoverSpan())
+        list.appendChild(item)
+        tarefa.value = ""
+        tarefa.focus()
+    }
+}
+list.addEventListener("click", function (event) {
+    //verifica se o event tem a classe com nome "remove-item"
+    if (event.target.classList.contains("remove-item")) {
+        //manda remover o elemento pai
+      event.target.parentElement.remove();
+    }
+});
 
-    createCloseButton(li)
+function criarRemoverSpan() {
+    const span = document.createElement("span");
+    span.innerText = "🗑️";
+    span.className = "remove-item";
+    span.style.cursor = "pointer";
+    span.style.marginLeft = "10px";
+    return span;
 }
 
-document.querySelectorAll("li").forEach(createCloseButton)
-
-document.getElementById("list").addEventListener("click", (e) => {
-    if (e.target.tagName === "li")
-        e.target.classList.toggle("checked")
-})
