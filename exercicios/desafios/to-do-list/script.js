@@ -12,8 +12,12 @@ function adicionarLista() {
       item.appendChild(criarRemoverSpan());
       list.appendChild(item);
       tarefa.value = "";
-      tarefa.focus();
+        tarefa.focus();
+        item.addEventListener("click", () => {
+        item.classList.toggle("completed")
+    })
     }
+    
 }
 list.addEventListener("click", function (event) {
     //verifica se o event tem a classe com nome "remove-item"
