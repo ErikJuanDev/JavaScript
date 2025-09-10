@@ -22,12 +22,8 @@
 
 const users = usuarios.map((users) => {
     if (users.idade >= 18) {
-        return users.id
+        return users.nome + " é maior de idade"
     }
     return users.nome + " é menor de idade"
 })
 console.log(users)
-
- console.log(   
-     usuarios.reverse()
- )
