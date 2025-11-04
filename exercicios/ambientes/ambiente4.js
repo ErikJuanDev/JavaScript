@@ -18,7 +18,7 @@
         },
     ]
 
-//find - busca o primeirop item da condicao feita
+//find - busca o primeiro item da condicao feita
 
     // leia-se: "encontre um item dentro de usuarios"
 const user = usuarios.find((item) => {
